@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>납품자 정보</legend><br>
+            <label>1. 납품자명 : </label><input type="text"><br><br>
+            <label>2. email : </label><input type="email" placeholder="answer@naver.com"><br><br>
+            <label>3. 홈페이지 : </label><input type="url" value="https://"><br><br>
+            <label>4. 지역 :  </label>
+            <select name="nation">
+                <option value="bu">부산</option>
+                <option value="ill">일산</option>
+                <option value="sou">서울</option>
+                <option value="ect">기타</option>
+            </select>
+        </fieldset>
+        <br>
+    </form>
+    <form>
+        <fieldset>
+            <legend>납품 정보</legend>
+            <ul>
+                <li> <label>상품명 : </label><input type="text"><br></li><br>
+                <li><label>납품수량 : </label><input type="text" placeholder="최소 100"></li><br>
+                <li><label>납품등급 : </label><input type="range" min="0" max="100" value="50" step="10"></li><br>
+                <li><label>기타사항 : </label>
+                    <textarea name="contents" cols="30" rows="10" style="resize:none;"></textarea>
+                </li><br>
+            </ul>
+        </fieldset>
+    </form>
+    <br>
+    <button>send message</button>
+    <br><br><br><br>
+
+    
+    <label>고객명 : </label><input type="text"><br><br>
+    <label>전화번호 : </label><input type="text"><br><br>
+    <label>E-mail : </label><input type="text"><br><br>
+    <label>피자선택 : </label>
+    <select name="pizza" >
+        <option value="none">피자를 선택하세요.</option>
+        <option value="콤비네이션">콤비네이션</option>
+        <option value="치즈">치즈</option>
+        <option value="포테이토">포테이토</option>
+        <option value="감자">콤비네이션 </option>
+    </select>
+    <form>
+        <fieldset>
+            <legend>피자 사이즈</legend>
+        <label 사이즈 : ></label>
+        <input type="radio" id="small" name="pizza" checked>
+        <label for="small">Small</label><br><br>
+        <input type="radio" id="medium" name="pizza">
+        <label for="medium">Medium</label><br><br>
+        <input type="radio" id="large" name="pizza">
+        <label for="large">Large</label><br><br>
+    
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>토핑 선택</legend>
+        <label 토핑 : ></label>
+        <input type="checkbox" id="베이컨" name="베이컨">
+        <label for="베이컨">베이컨</label><br><br>
+        <input type="checkbox" id="치즈" name="치즈">
+        <label for="치즈">치즈</label><br><br>
+        <input type="checkbox" id="양파" name="양파">
+        <label for="양파">양파</label><br><br>
+        <input type="checkbox" id="버섯" name="버섯">
+        <label for="버섯">버섯</label><br><br>
+        </fieldset>
+    </form>
+    <br>
+    <label>희망배송시간 : </label><input type="time", name="time"><br><br>
+    <label>배송시 요청사항 : </label><textarea name="contents" cols="25" rows="4" style="resize:none;"></textarea>
+    <br><br><br>
+    <button>주문하기</button>
+    
+    <br><br><br>
+    <h1>회원가입</h1>
+    <form>
+        <fieldset>
+            <legend>필수 입력 사항</legend>
+            <label><strong><b>ID</b></strong></label>
+            <input type="text" placeholder="아이디 10글자 이내">
+            <button>중복 확인</button><br>
+            <label><strong><b>비밀번호</b></strong></label><input type="text" placeholder="영문, 숫자, 특수문자 포함 8자 이상" style="width: 20;"><br>
+            <label><strong><b>비밀번호 확인</b></strong></label><input type="text"><br>
+            <label><strong><b>Email</b></strong></label><input type="text">
+            <select name="이메일">
+            <option value="none">직접입력</option>
+            <option value="naver.com">naver.com</option>
+            <option value="nate.net">nate.net</option>
+            </select>
+        </fieldset>
+    </form>
+
+    <br>
+    <form>
+        <fieldset>
+            <legend>추가 정보</legend>
+            <label>프로필 사진</label>
+            <input type="file" name="uploadfile" multiple><br><br>
+            <label>성별 : </label>
+            <input type="radio" id="male" name="gender" checked>
+            <label for="male">남자</label>
+            <input type="radio" id="female" name="gender">
+            <label for="female">여자</label><br><br>
+            <label>생년월일 : </label><input type="date", name="date"><br>
+            <br><br><br>
+            <label>취미</label><br>
+            <input type="checkbox" id="baseball" name="hobby" value="야구">
+            <label for="baseball">야구</label>
+            <input type="checkbox" id="baseketball" name="hobby" value="농구">
+            <label for="baseketball">농구</label>
+            <input type="checkbox" id="football" name="hobby" value="축구">
+            <label for="football">축구</label>
+            <br>
+            <input type="checkbox" id="study" name="hobby" value="공부" checked>
+            <label for="study">공부</label>
+            <input type="checkbox" id="music" name="hobby" value="음악감상">
+            <label for="music">음악감상</label>
+            <br>
+            <input type="checkbox" id="ect" name="hobby" value="기타">
+            <label for="ect">기타</label><input type="text"><br><br>
+            <label>자기소개</label><br>
+            <textarea name="contents" cols="80" rows="10" style="resize:none;"></textarea>
+        </fieldset>
+    </form>
+<button>회원가입</button>
+<button>다시입력</button>
+<button>이전으로</button>
+
+<br><br><br><br><br><br>
+<h1>식단표 테이블 만들기</h1>
+<table border="1">
+    <caption><b>머행블로그 식단표</b></caption>
+    <tr>
+        <th>월</th>
+        <th>화</th>
+        <th>수</th>
+        <th>목</th>
+        <th>금</th>
+        <th>토</th>
+        <th>일</th>
+    </tr>
+    <tr>
+        <td colspan="2">쌀밥</td>
+        <td colspan="3">잡곡밥</td>
+        <td>스파게티</td>
+        <td>짜장면</td>
+    </tr>
+    <tr>
+        <td>불고기</td>
+        <td>떡갈비</td>
+        <td>미니돈까스</td>
+        <td>오징어볶음</td>
+        <td>제육볶음</td>
+        <td rowspan="2">피클</td>
+        <td>단무지</td>
+    </tr>
+    <tr>
+        <td>배추김치</td>
+        <td>깍두기</td>
+        <td>미소된장국</td>
+        <td>동치미</td>
+        <td>고추절임</td>
+        <td>짬뽕국물</td>
+    </tr>
+</table>
+<br><br>
+
+<h1>표 만들기</h1>
+<table border="1">
+    <caption><b>셀 합치기</b></caption>
+    <tr>
+        <th colspan="3">공연요금</th>
+    </tr>
+    <tr>
+        <td>구분</td>
+        <td>s석</td>
+        <td>VIP</td>
+    </tr>
+    <tr>
+        <td>성인</td>
+        <td>30,000</td>
+        <td>50,000</td>
+    </tr>
+    <tr>
+        <td>청소년</td>
+        <td>40,000</td>
+        <td>60,000</td>
+    </tr>
+    <tr>
+        <td>청소년</td>
+        <td colspan="2">미취학 아동 일반 요금의 50%</td>
+    </tr>
+    <tr>
+        <td rowspan="2">공연시간</td>
+        <td>1회</td>
+        <td>13:00시 ~ 15:00시</td>
+    </tr>
+    <tr>
+        <td>2회</td>
+        <td>17:00 ~ 19:00시</td>
+    </tr>
+</table>
+<br>
+<table border="1">
+<tr>
+    <td>가</td>
+    <td>나</td>
+    <td>다</td>
+    <td rowspan="4">라</td>
+</tr>
+<tr>
+    <td>마</td>
+    <td colspan="2" rowspan="3">바</td>
+</tr>
+<tr>
+    <td>사</td>
+</tr>
+<tr>
+    <td>아</td>
+</tr>
+<tr>
+    <td colspan="2">자</td>
+    <td colspan="2">차</td>
+</tr>
+<tr>
+    <td colspan="4">카</td>
+</tr>
+</table>
+
+</body>
+</html>
